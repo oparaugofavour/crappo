@@ -1,0 +1,696 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+   
+}
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5f697d;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0d2b;
+    padding-top: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px; 
+    width: 90%;
+}
+.links{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+nav .links a:last-child{
+    padding: 5px 18px;
+    background-color: #3366CC;
+    border-radius: 30px;
+    text-align: center;
+    }
+.hamburger-menu i{
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+span{
+    color: #5f697d;
+}
+.landing-page{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.left{
+    margin-top: 100px;
+    color: white;
+    width: 100%;
+}
+.first-p{
+    display: flex;
+    width: 30%;
+}
+.save-p{
+    border-radius: 20px;
+    color: rgb(156, 163, 175);
+    background-color: white;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 4px;
+    align-items: center;
+    padding: 3px 15px;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+}
+.save-p2{
+    background-color: rgba(75, 85, 99, 0.5);
+    border-radius: 20px;
+    padding: 5px 8px;
+    padding-left: 120px;
+    position: absolute;
+    margin-left: -5px;
+}
+.left h1{
+    font-size: 50px;
+}
+.right{
+    width: 40%;
+}
+.right img{
+    width: 450px;
+    margin-top: 30px;
+    margin-left: -100px;
+}
+.second-p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+.trybtn{
+    width: 23%;
+    padding: 7px 10px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    background-color: #3671e9;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.bxs-right-arrow{
+    font-size: 6px;
+    padding: 13px;
+    background-color: white;
+    border-radius: 30px;
+    color: #3671e9;
+    margin-left: 39px;
+}
+.why-crappo{
+    margin: auto;
+    background-color: #0d0d2b;
+
+}
+.crappo-numbers{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin: auto;
+}
+.crappo-exchange,
+.crappo-countries,
+.crappo-investors{
+    display: flex;
+    color: white;
+}
+.crappo-numbers img{
+    padding: 5px 6px;
+    border-radius: 30px;
+    background-color: rgba(75, 85, 99, 0.6);
+    margin-right: 25px;
+}
+
+.why-crappomain{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.why-crappoleft{
+    width: 50%;
+    order: 2;
+}
+.why-crappomain img{
+    width: 100%;
+}
+.why-crapporight{
+    width: 40%;
+}
+.why-crappotxt{
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+}
+.why-crappotxt h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.why-crappotxt p{
+    margin-bottom: 10px;
+}
+.why-crappobtn{
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: #3671e9;
+    font-size: 15px;
+}
+.first-txt{
+    padding-bottom: 200px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 100px;
+}
+.first-txt h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.first-txt p{
+    width: 80%;
+    margin: auto;
+}
+
+.crypto-calculator{
+    padding: 30px 50px;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    margin-top: -170px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 18px #5f697d;
+}
+.calculator-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#cryptocalculator{
+    width: 50%;
+}
+#crypto-type{
+    width: 20%;
+}
+.crypto-calcbtn{
+    width: 20%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #3671e9;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+#cryptocalculator, #crypto-type{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 12px;
+}
+input::placeholder,
+#crypto-type{
+    text-align: left;
+    font-size: 12px;
+    color: black;
+}
+.crypto-calcinfo{
+    text-align: left;
+}
+.crypto-calcinfo p{
+    margin-bottom: 10px;
+    color: #5f697d;
+}
+.crypto-calcinfo .estimate{
+    color: #0000ff;
+    font-size: 12px;
+}
+.crypto-calcinfo h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.crypto-calcinfo span{
+    color: #0000ff;
+}
+.cryptocurrencies{
+    width: 100%;
+    background-color: white;
+    padding-bottom: 0px;
+}
+.crypto-currencies-content{
+    margin: auto;
+    width: 98%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.crypto-currencies-content h1{
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.crypto-currencies{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.bitcoin,
+.ethereum,
+.litecoin{
+    padding: 50px 40px;
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 18px #5f697d;
+}
+.bitcoin h2,
+.ethereum h2,
+.litecoin h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.bitcoin sup,
+.ethereum sup,
+.litecoin sup{
+    font-size: 20px;
+    color: #5f697d;
+}
+.bx-chevron-right{
+    font-size: 30px;
+    border: #5f697d;
+    border-radius: 40px;
+
+}
+.investments-page{
+    width: 100%;
+    background-color: #0d0d2b;
+    padding-top: 40px;
+    margin: auto;
+}
+.investments-page h2{
+    width: 50%;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    padding: 30px 0px;
+    text-align: center;
+}
+.invest-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+    margin-bottom: 80px;
+}
+.blurb-wrapper,
+.blurb-wrapper-right{
+    color: white;
+    width: 45%;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.blurb-wrapper-right{
+    order: 2;
+}
+.blurb-wrapper h3, 
+.blurb-wrapper p,
+.blurb-wrapper-right h3,
+.blurb-wrapper-right p{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.image-wrapper{
+    width: 45%;
+}
+.image-wrapper img{
+    width: 100%;
+}
+.invest-wrapper button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: #3671e9;
+}
+.newsletter-box{
+    width: 75%;
+    height: 30vh;
+    margin: auto;
+    border-radius: 40px;
+    background-image: url(images/newsletter-box-image.png);
+    background-repeat: no-repeat;
+}
+.email-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.description,
+.input{
+    width: 40%;
+    margin-top: 50px;
+}
+.description h3,
+.description p{
+    text-align: left;
+    padding: 0px;
+    margin-left: 30px;
+    color: white;
+}
+.description h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#email{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    background-color: #3671e9;
+}
+input::placeholder{
+    color: white;
+    text-align: left;
+}
+.input{
+    margin-top: 70px;
+}
+button{
+    padding: 5px 14px;
+    border: none;
+    border-radius: 30px;
+    color: #3671e9;
+}
+.footsy{
+    background-color: #0d0d2b;
+    height: fit-content;
+    width: 100%;
+    padding-top: 40px;
+}
+.footer-footsy{
+    width: 90%;
+    margin: auto;
+}
+.footer-first{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-first .logo{
+    margin-top: -200px;
+}
+.footer-first h2,
+.footer-first p{
+    color: white;
+    margin-bottom: 40px;
+}
+.footer-first p{
+    font-size: 20px;
+}
+.footer-first ul{
+    list-style: none;
+    /* margin-top: 20px; */
+}
+.footer-first ul li{
+    margin-bottom: 20px;
+}
+.quick-links a:hover,
+.resources-links a:hover{
+    color: #3366CC;
+}
+.quick-links a,
+.resources-links a{
+    text-decoration: none;
+    color: white;
+}
+.payment-methods{
+    text-align: left;
+}
+.payment-forms{
+    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.last-bar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+.last-bar p{
+    color: white;
+}
+.social-media-handles{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-handles i{
+    color: white;
+    font-size: 20px;
+}
+.social-media-handles i:hover{
+    color: #3366CC;
+}
+@media(max-width: 1000px) {
+    body{
+        width: 100%;
+    }
+    .links a, span{
+        display: none;
+    }
+    .hamburger-menu{
+        margin-left: 30rem;
+    }
+    .hamburger-menu i{
+        display: block;
+    }
+    .landing-page{
+        display: block;
+        margin: auto;
+    }
+    
+    .first-p,.second-p{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .trybtn{
+        margin-left: 65px;
+        width: 25%;
+    }
+    .right{
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .right img{
+        margin: auto;
+        width: auto;
+        margin-left: 70px;
+    }
+    .why-crappo{
+        margin: auto;
+    }
+    .crappo-numbers{
+        display: block;
+        margin: auto;
+    }
+    .crappo-exchange,
+    .crappo-countries,
+    .crappo-investors{
+        max-width: auto;
+        align-items: center;
+        /* margin-bottom: 30px; */
+    }
+    .why-crappomain{
+        display: block;
+        width: 90%;
+    }
+    .why-crappoleft,
+    .why-crapporight{
+        width: 100%;
+    }
+    .why-crappotxt{
+        margin-bottom: 20px;
+    }
+    .crypto-calculator{
+        width: 80%;
+    }
+    .calculator-div{
+        display: block;
+        
+    }
+    #cryptocalculator,
+    #crypto-type{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .crypto-calcbtn{
+        float: left;
+        margin-left: -5px;
+    }
+    .crypto-calcinfo{
+        margin-top: 20px;
+    }
+    .crypto-calcinfo .estimate{
+        padding-top: 20px;
+    }
+    .crypto-currencies{
+        display: block;
+    }
+    .crypto-currencies-content h1{
+        width: 80%;
+    }
+    .bitcoin,
+    .ethereum,
+    .litecoin{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .investments-page{
+        margin: auto;
+    }
+    .investments-page h2{
+        width: 80%;
+    }
+    .invest-wrapper{
+        display: block;
+        margin: auto;
+    }
+    .blurb-wrapper,
+    .blurb-wrapper-right{
+        width: 100%;
+        margin: auto;
+    }
+    .blurb-wrapper h3, 
+    .blurb-wrapper p,
+    .blurb-wrapper-right h3,
+    .blurb-wrapper-right p{
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .image-wrapper{
+        width: 80%;
+        margin: auto;
+    }
+    .invest-wrapper button{
+        margin-bottom: 20px;
+    }
+    .newsletter-box{
+        margin-top: 40px;
+        width: 80%;
+    }
+    .email-input{
+        display: block;
+    }
+    .description,
+    .input{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .input{
+        display: block;
+        margin-left: 20px;
+    }
+    .description h3{
+        padding-top: 20px;
+    }
+    #email{
+        width: 90%;
+    }
+    button{
+        margin-left: 250px;
+        margin-top: 20px;
+    }
+    .footsy{
+        padding-top: 40px;
+    }
+    .footer-first{
+        display: block;
+        text-align: center;
+    }
+    .footer-first .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .payment-methods{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .payment-forms{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .quick-links,
+    .resources-links{
+        margin-top: 20px;
+    }
+    .last-bar{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .social-media-handles{
+        width: 30%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 650px){
+
+}

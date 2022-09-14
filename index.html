@@ -1,0 +1,278 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crappo Crypto</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font icon -->
+    <script src="https://kit.fontawesome.com/30ddacfb84.js" crossorigin="anonymous"></script>
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.e44a93b92960b7a7a870e08a3080d60e.svg" alt="Crappologo">
+            </div>
+           <div class="hamburger-menu">
+            <i class='bx bx-menu' id="demo" onclick="menuBar()"></i>
+           </div>
+
+           <div class="links">
+            <a href="">Products</a>
+            <a href="">Features</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Login</a>
+            <span> | </span>
+              <a href="">Register</a>
+           </div>
+
+        </nav>
+        <section class="landing-page">
+            <div class="left">
+                <div class="first-p">
+                    <p class="save-p" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">70% SAVE</p>
+                    <p class="save-p2">for the best black friday deals</p>
+                </div>
+                <div class="second-p"  data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                    <h1>Fastest & Secure Platform To Invest In Crypto</h1>
+                    <p>Buy and sell cryptocurrencies by trusted 10M wallets, in over 100m transactions</p>
+                </div>
+                <button class="trybtn" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">Try For FREE
+                    <i class='bx bxs-right-arrow' data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-out"></i>
+                </button>
+            </div>
+            <div class="right">
+                <img src="images/hero-img.bc2cc512f513aaa9f0bf.png" alt="landing-pageimage" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">
+            </div>
+        
+        </section>
+
+    </header>
+
+    <section class="why-crappo">
+        <div class="crappo-numbers" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+           <div class="crappo-exchange">
+              <img src="images/digital currency exchange-image.svg" alt="currencywave">
+              
+              <div class="crappo-exchange-txt">
+                <h2>$30B</h2>
+                <p>Digital Currency Exchange</p>
+              </div>
+           </div>
+           <div class="crappo-countries">
+               <img src="images/crappo lock-image.svg" alt="crappolock">
+               <div class="crappo-countries-txt">
+                   <h2>190+</h2>
+                   <p>Countries Around The World</p>
+               </div>
+           </div>
+           <div class="crappo-investors">
+              <img src="images/crappo contact-image.svg" alt="">
+              <div class="crappo-investors-txt">
+                 <h2>$10M</h2>
+                 <p>Trusted Wallet Investors</p>
+              </div>
+           </div>
+        </div>
+
+        <div class="why-crappomain">
+           
+            <div class="why-crappoleft" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <div class="why-crappotxt" >
+                    <h2>Why You Should Choose CRAPPO</h2>
+                    <p>Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.</p>
+                </div>
+                <button class="why-crappobtn">learn more</button>
+            </div>
+            <div class="why-crapporight" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <img src="images/whycrappo-image.png" alt="why crappo image">
+            </div>
+        </div>
+            <div class="first-txt" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <h2>How Much Can You Earn With Us?</h2>
+            <p>Let's check how much you will earn today</p>
+            </div>
+           
+
+       
+    </section>
+    <div class="crypto-calculator" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">
+        <div class="calculator-div">
+            <input type="text" id="cryptocalculator" placeholder="Enter Your Harsh Rate">
+            <select name="" id="crypto-type">
+                <option value="">TH/s</option>
+                <option value="">H/s</option>
+                <option value="">KH/s</option>
+                <option value="">MH/s</option>
+                <option value="">GH/s</option>
+            </select>
+            <button class="crypto-calcbtn">Calculate</button>
+        </div>
+        <div class="crypto-calcinfo">
+            <p class="estimate"><b>ESTIMATED 24 HOUR REVENUE:</b></p>
+            <h2>0.055 130 59 ETH <span>($1275)</span></h2>
+            <p>Revenue will change based on mining difficulty and Ethereum price.</p>
+        </div>
+    </div>
+    <section class="cryptocurrencies">
+  
+        <div class="crypto-currencies-content">
+            <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                Trade securely and market the high growth cryptocurrencies.
+            </h1>
+            <div class="crypto-currencies">
+                <div class="bitcoin" id="bitCoin" onclick="myFunction()">
+                    <img src="images/bitcoin-icon.png" alt="bitcoin icon">
+                    <h2>Bitcoin <sup>BTC</sup></h2>
+                    <p>Digital currency which a method of transactions in maintained.</p>
+                    <button>
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+
+                <div class="ethereum" id="ethereum" onclick="myFunction()">
+                    <img src="images/Ethereum-icon.png" alt="ethereum icon">
+                    <h2>Ethereum <sup>EHC</sup></h2>
+                    <p>Blockchain technology to create and run decentralized digital applications. </p>
+                    <button><i class='bx bx-chevron-right'></i></button>
+                </div>
+
+                <div class="litecoin" id="liteCoin" onclick="myFunction()">
+                    <img src="images/Litecoin-iocn.png" alt="litecoin icon">
+                    <h2>Bitcoin <sup>BTC</sup></h2>
+                    <p>Cryptocurrency that enables instant payment to anyone in the world</p>
+                    <button><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="investments-page">
+
+        <div class="investment-container">
+            <h2 data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">Market sentiments, portfolio and run the infrastructure of your choice</h2>
+            <div class="invest-wrapper">
+                <div class="blurb-wrapper">
+                    <h3>Invest Smart</h3>
+                <p>Get full statistic information about the behaviour of buyers and sellers will help you to make the decision</p>
+                <button data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">learn more</button>
+            </div>
+                <div class="image-wrapper">
+                    <img src="images/Invest smart-image.png" alt="invest-smartimage" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+                </div>
+                
+
+            </div>
+            <div class="invest-wrapper">
+                <div class="blurb-wrapper-right">
+                    <h3>Detailed Statistics</h3>
+                <p>View all mining related information in real time at any point, at any location and decide which polls you want to mine in</p>
+                <button data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">learn more</button>
+            </div>
+                <div class="image-wrapper">
+                    <img src="images/statistics-image.png" alt="invest-smartimage" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                </div>
+                
+
+            </div>
+            <div class="invest-wrapper">
+                <div class="blurb-wrapper">
+                    <h3>Grow your profits and track your investments</h3>
+                <p>Use advanced analytical tools. Clear Trading View charts let you track current and historical profit inevestments</p>
+                <button data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">learn more</button>
+            </div>
+                <div class="image-wrapper">
+                    <img src="images/profit-image.png" alt="invest-smartimage" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                </div>
+                
+
+            </div>
+
+        </div>
+        <div class="newsletter-box" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">
+            <div class="email-input">
+                <div class="description">
+                    <h3>Start mining now</h3>
+                <p>Join now with CRAPPO to get the latest news and start mining now</p>
+                </div>
+               <div class="input">
+                <input type="text" id="email" name="yemail" placeholder="Enter your email">
+                <button><b>subscribe</b></button>
+               </div>
+    
+            </div>
+        </div>
+                
+    </section>
+    <footer class="footsy">
+
+       <div class="footer-footsy">
+       <div class="footer-first">
+        <img src="images/logo.e44a93b92960b7a7a870e08a3080d60e.svg" alt="crappo-logo" class="logo">
+        <div class="quick-links">
+            <h2>Quick Link</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+               <li><a href="">Features</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="resources-links">
+            <h2>Resources Links</h2>
+            <ul>
+                <li><a href="">Download Whitepaper</a></li>
+                <li><a href="">Smart Token</a></li>
+                <li><a href="">Blockchain Explore</a></li>
+                <li><a href="">Crypto API</a></li>
+                <li><a href="">Interest</a></li>
+            </ul>
+        </div>
+        <div class="payment-methods">
+            <p><b>We accept the following payment systems</b></p>
+            <div class="payment-forms">
+                <img src="images/visa-icon.png" alt="visa-icon">
+                <img src="images/payment-icon1.png" alt="payment-methods">
+                <img src="images/bit-logo.png" alt="bit-pay">
+            </div>
+        </div>
+       </div>
+        <div class="last-bar">
+            <p>2022 CRAPPO. All rights reserved.</p>
+            <div class="social-media-handles">
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>                
+            </div>
+        </div>
+       </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        function menuBar(){
+    document.getElementById("demo").style.color = red;
+}
+function myFunction(){
+    document.getElementById()
+}
+    </script>
+</body>
+</html>
